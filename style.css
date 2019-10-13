@@ -11,20 +11,21 @@ div.masthead {
     /*border-bottom: 2px solid black;*/
 }
 
-header{
+header {
     margin-top: 130px;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-header div.container {
+header .container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 @font-face {
     font-family: 'OldNewspaperTypes';
-    src: url('./fonts/OldNewspaperTypes.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('/fonts/OldNewspaperTypes.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 * {
@@ -32,16 +33,10 @@ header div.container {
     font-family: 'Bree Serif', serif;
 }
 
-body {
-    min-height: 1500px;
-    /*background-image: url("./img/paper-seamless-texture.jpg");*/
-    background-repeat: repeat;
-    background-size: 500px;
-    /*background-color: #E0D3AF;*/
-    opacity: 0.85;
-}
-
-section, header, footer {
+section .container,
+header .container,
+footer .container,
+nav .container {
     background-color: #f1dbc3;
 }
 
@@ -60,7 +55,7 @@ nav.navbar {
     /*padding: 10px 0 0;*/
 }
 
-.navbar-brand h1{
+.navbar-brand h1 {
     padding-left: 10px;
     padding-right: 10px;
     color: #f1dbc3;
@@ -68,7 +63,7 @@ nav.navbar {
     font: 64px 'Sansita One';
 }
 
-.brand-info{
+.brand-info {
     background-color: #2a3648;
     color: #f1dbc3;
 }
@@ -79,13 +74,14 @@ nav.navbar {
 }
 
 .nav-link {
-    /* transform: rotate(45deg); */
+    transform: rotate(45deg);
     font-family: 'Lato', sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    color: #f1dbc3;;
+    /* font-size: 1.5rem; */
+    color: #f1dbc3;
+    ;
 }
 
 img.card-img-bottom {
@@ -110,7 +106,7 @@ nav .container {
     background-color: rgba(231, 204, 24, 0.5);
 }
 
-section.container {
+section div.container {
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -160,6 +156,6 @@ footer {
     min-height: 400px;
 }
 
-footer .fa{
+footer .fa {
     font-size: 2rem;
 }
