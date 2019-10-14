@@ -55,12 +55,25 @@ nav.navbar {
     /*padding: 10px 0 0;*/
 }
 
+@media screen and (max-width: 767px) {
+    .navbar-brand h1 {
+        margin-top: 160px;
+        font: 44px 'Sansita One';
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand h1r {
+        margin-top: 10px;
+        font: 64px 'Sansita One';
+    }
+}
+
 .navbar-brand h1 {
     padding-left: 10px;
     padding-right: 10px;
     color: #f1dbc3;
     margin: 0;
-    font: 64px 'Sansita One';
 }
 
 .brand-info {
@@ -74,14 +87,16 @@ nav.navbar {
 }
 
 .nav-link {
-    transform: rotate(45deg);
-    font-family: 'Lato', sans-serif;
+    @media screen and (min-width: 768px) {
+        transform: rotate(45deg);
+    }
+    font-family: 'Lato',
+    sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     /* font-size: 1.5rem; */
     color: #f1dbc3;
-    ;
 }
 
 img.card-img-bottom {
@@ -111,8 +126,19 @@ section div.container {
     padding-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+    .header {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        margin-top: 10px;
+    }
+}
+
 .header {
-    padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     background-color: rgba(47, 76, 72, 0.99);
@@ -144,16 +170,6 @@ section div.container {
     margin-right: auto;
     padding-top: auto;
     padding-bottom: auto;
-}
-
-#contact {
-    background-image: url("img/telephone.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-footer {
-    min-height: 400px;
 }
 
 footer .fa {
