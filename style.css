@@ -175,3 +175,21 @@ section div.container {
 footer .fa {
     font-size: 2rem;
 }
+
+.container .row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer .container .row {
+    padding-bottom: 25px;
+}
+
+.affix {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+    -webkit-transition: padding 0.2s linear;
+    -moz-transition: padding 0.2s linear;
+    -o-transition: padding 0.2s linear;
+    transition: padding 0.2s linear;
+}

@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" data-toggle="affix">
         <div class="container">
             <a class="navbar-brand text-center" href="#">
                 <div class="brand">
@@ -104,27 +104,63 @@
     </section>
 
     <footer>
-        <div class="container ">
+        <div class=" container ">
             <div class=" row justify-content-around ">
-                <div class="col-md-2 box text-center ">
-                     <h3 class="text-uppercase ">kontakt</h3>
-                                <i class="fa fa-phone fa-5 " aria-hidden=" true "></i>
-                                <i class="fa fa-youtube " aria-hidden="true "></i>
+                <div class=" col-md-2 box text-center ">
+                     <h3 class=" text-uppercase ">kontakt</h3>
+                     <h5><i class=" fa fa-phone fa-5 " aria-hidden=" true "></i>733 165 xxx</h5>
+                                <a class=" " href=" https://www.youtube.com/user/daniobreeg "><i class=" fa fa-youtube " aria-hidden=" true "></i></a>
+                                <a class=" " href=" https://www.facebook.com/RAKSO-Motors-1468945966477650/ "><i class=" fa fa-facebook-square " aria-hidden=" true "></i></a>
                 </div>
-                <div class="col-md-2 box text-center ">
-                        <h3 class="text-uppercase ">szukaj</h3>
-                            <i class="fa fa-search fa-5 "></i>
+                <div class=" col-md-2 box text-center ">
+                        <h3 class=" text-uppercase ">szukaj</h3>
+                        <i class=" fa fa-search fa-5 "></i>
+                        <form>
+                                <div class=" form-group ">
+                    <input type=" search " class=" form-control " id=" exampleInputEmail1 " aria-describedby=" emailHelp "
+                        placeholder=" ">
+                </div>
+                </form>
+                
 
-                </div>
-                <div class="col-md-2 box text-center "> 
-                        <h3 class="text-uppercase ">regulamin</h3>
-                        <i class="fa fa-gavel fa-5 " aria-hidden="true "></i>
-                </div>
             </div>
+            <div class=" col-md-2 box text-center ">
+                <h3 class=" text-uppercase ">regulamin</h3>
+                <i class=" fa fa-gavel fa-5 " aria-hidden=" true "></i>
+            </div>
+        </div>
 
         </div>
-    </footer>
+        </footer>
+        <script type="text/javascript ">
+            $(document).ready(function () {
 
+                console.log("DOM is ready ");
+
+                var toggleAffix = function (affixElement, scrollElement, wrapper) {
+
+                    var height = affixElement.outerHeight(),
+                        top = wrapper.offset().top;
+
+                    if (scrollElement.scrollTop() >= top) {
+                        wrapper.height(height);
+                        affixElement.addClass(" affix ");
+                    } else { affixElement.removeClass("affix "); wrapper.height('auto'); }
+                };
+                $('[data-toggle="affix " ]').each(function () {
+                    var ele = $(this), wrapper = $('<div></div>');
+
+                    ele.before(wrapper);
+                    $(window).on('scroll resize', function () {
+                        toggleAffix(ele, $(this), wrapper);
+                    });
+
+                    // init
+                    toggleAffix(ele, $(window), wrapper);
+                });
+
+            });
+        </script>
 </body>
 
 </html>
