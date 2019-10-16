@@ -22,11 +22,6 @@ header .container {
     padding-bottom: 60px;
 }
 
-@font-face {
-    font-family: 'OldNewspaperTypes';
-    src: url('/fonts/OldNewspaperTypes.ttf') format('truetype');
-    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
 
 * {
     line-height: 2;
@@ -139,7 +134,6 @@ section div.container {
 }
 
 .header {
-    padding-bottom: 10px;
     margin-bottom: 20px;
     background-color: rgba(47, 76, 72, 0.99);
     /*background-image: url('http://api.thumbr.it/whitenoise-2000x370.png?background=361c1cff&noise=574948&density=59&opacity=60');*/
@@ -185,11 +179,7 @@ footer .container .row {
     padding-bottom: 25px;
 }
 
-.affix {
-    padding-top: 0.2em !important;
-    padding-bottom: 0.2em !important;
-    -webkit-transition: padding 0.2s linear;
-    -moz-transition: padding 0.2s linear;
-    -o-transition: padding 0.2s linear;
-    transition: padding 0.2s linear;
+.affix h1{
+    font: 38px 'Sansita One';
+    transition: font 0.2s linear;
 }
