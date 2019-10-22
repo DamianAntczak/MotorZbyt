@@ -210,9 +210,29 @@ img.grayscale-60:hover {
 .card-mark .card-title {
   transform: rotate(45deg);
   color: #dad1b0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+}
+
+.card-mark a:hover .card-title{
+  transform: rotate(0deg);
+}
+
+.card-mark a:hover {
+  text-decoration: none;
 }
 
 .header.header-yellow {
   color: #1f1a17;
   background-color: #bfa642;
+}
+
+.model-badge {
+    display: inline-block;
+    font-size: 0.9rem;
+    background-color: #2a3648;
+    color: white;
+    padding: 0 5px 0 5px;
+    margin: 5px 2px 5px 2px;
+    font-family: 'Nunito', sans-serif;
 }
