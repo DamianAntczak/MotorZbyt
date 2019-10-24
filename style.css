@@ -133,7 +133,7 @@ section div.container {
 
 @media screen and (min-width: 768px) {
   .header {
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 
