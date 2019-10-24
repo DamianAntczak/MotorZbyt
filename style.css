@@ -150,7 +150,14 @@ section div.container {
   -moz-box-shadow: inset 0px 0px 3px 1px rgba(47, 76, 72, 0.1);
   -webkit-box-shadow: inset 0px 0px 3px 1px rgba(47, 76, 72, 0.1);
   box-shadow: inset 0px 0px 3px 1px rgba(47, 76, 72, 0.1);
+
 }
+
+.header-triangle{
+  padding-bottom: 1rem;
+  clip-path: polygon(50% 100%, 100% 50%, 100% 0, 0 0, 0 50%);
+}
+
 
 .box {
   border: 2px solid black;
@@ -181,7 +188,6 @@ footer .fa {
 footer .container .row {
   padding-bottom: 25px;
   padding-top: 25px;
-  background-color: #ca4735;
 }
 
 .affix h1 {
@@ -235,4 +241,73 @@ img.grayscale-60:hover {
     padding: 0 5px 0 5px;
     margin: 5px 2px 5px 2px;
     font-family: 'Nunito', sans-serif;
+}
+
+.color-yellow{
+  background-color: #f6d270;
+}
+
+.color-orange{
+  background-color: #ca4735;
+  color: #dad1b0;
+}
+
+.color-paper{
+  background-color: #dad1b0;
+}
+
+.color-navy-blue{
+  background-color: #2a3648;
+}
+
+.form-control{
+  border-radius: 0;
+  background-color: #dad1b0;
+}
+
+footer{
+  color: #dad1b0;
+}
+
+footer a{
+  color: #dad1b0;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #dad1b0;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .two-columns{
+      -webkit-column-gap: 20px;
+         -moz-column-gap: 20px;
+              column-gap: 20px;
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
+  }
+}
+
+p::first-letter {
+  float: left;
+  font-size: 3em;
+  margin: 0 .2em 0 0;
+  line-height: 100%; 
 }
