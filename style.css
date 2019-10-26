@@ -26,6 +26,7 @@ header .container {
   font-family: 'Bree Serif', serif;
 }
 
+
 section .container,
 header .container,
 footer .container,
@@ -175,6 +176,8 @@ section div.container {
   margin-right: 5px;
 }
 
+
+
 footer .fa {
   font-size: 2rem;
 }
@@ -309,4 +312,16 @@ a:hover{
   font-size: 3em;
   margin: 0 .2em 0 0;
   line-height: 100%;
+}
+
+.footer-box{
+  padding: 10px;
+}
+
+div.card a{
+  color: black;
+}
+
+div.alpha-2:hover{
+  text-decoration: none !important;
 }
