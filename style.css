@@ -1,3 +1,8 @@
+
+* {
+  border-radius: 0;
+}
+
 div.masthead {
   padding-top: 300px;
   text-align: center;
@@ -324,4 +329,12 @@ div.card a{
 
 div.alpha-2:hover{
   text-decoration: none !important;
+}
+
+.card-price{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 5px;
+  background-color: #e1ce64;
 }
