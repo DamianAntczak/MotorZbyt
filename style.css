@@ -1,6 +1,6 @@
 
-* {
-  border-radius: 0;
+button {
+  border-radius: 0 !important;
 }
 
 div.masthead {
@@ -124,6 +124,7 @@ nav .container {
 
 .card-body {
   background-color: rgba(231, 204, 24, 0.5);
+  padding-bottom: 0px;
 }
 
 section div.container {
